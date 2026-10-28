@@ -20,17 +20,9 @@ header {
       justify-content: space-between;
       align-items: center;
 
-      .site-title {
-        margin: 0px;
-        font-size: 1.25rem;
-        font-weight: 700;
-        line-height: 1.75rem;
-        color: var(--primary-color);
-
-        .header-actions {
-          display: flex;
-          gap: 0.5rem;
-        }
+      .header-actions {
+        display: flex;
+        gap: 0.5rem;
       }
 
       .header-brand,
