@@ -17,3 +17,18 @@ html {
 body {
   background-color: var(--background-color);
 }
+
+html {
+  --book-header-offset: 5rem;
+  scroll-behavior: smooth;
+}
+
+main.wrapper > div[id] {
+  scroll-margin-top: var(--book-header-offset);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
