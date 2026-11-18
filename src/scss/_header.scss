@@ -19,7 +19,11 @@ header {
     padding-right: 2rem;
 
     .header-inner {
-      height: 4rem;
+      min-height: 4rem;
+      height: auto;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      padding-block: 0.5rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -43,7 +47,9 @@ header {
         align-items: center;
 
         &.header-brand {
-          gap: 2rem;
+          min-width: 0;
+          flex-wrap: wrap;
+          gap: 0.5rem 2rem;
         }
 
         &.header-actions {
@@ -53,19 +59,23 @@ header {
 
       nav {
         display: flex;
+        flex-wrap: wrap;
         gap: 1.5rem;
+      }
+      label[for="book-search"] {
+        display: var(--search-bar-display);
+      }
 
-        a {
-          color: #4b5563;
-          text-decoration: inherit;
-          &:hover {
-            color: var(--primary-color);
-          }
+      a {
+        color: #4b5563;
+        text-decoration: inherit;
+        &:hover {
+          color: var(--primary-color);
         }
       }
 
       div.search {
-        display: flex;
+        display: var(--search-bar-display);
         align-items: stretch;
         gap: 0;
       }
